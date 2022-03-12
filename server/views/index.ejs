@@ -1,0 +1,23 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <%- helmet.meta.toString() %>
+  <%- helmet.link.toString() %>
+  <%- helmet.title.toString() %>
+  <%- helmet.style.toString() %>
+  <%- helmet.script.toString() %>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/main.css" />
+</head>
+<body>
+  <div id="root">
+    <%- html %>
+  </div>
+  <script>
+    window.__INITIAL_STATE__ = <%- script %>
+  </script>
+  <script src="/js/index.js"></script>
+</body>
+</html>
